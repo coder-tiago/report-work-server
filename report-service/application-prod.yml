@@ -9,5 +9,17 @@ management:
         - '*'
 report-service:
   hibernate:
-    show_sql: false
-    format_sql: false
+    show-sql: false
+    format-sql: false	
+    generate-statistics: false
+    use-identifier-rollback: true
+    statement-cache:
+      size: 0
+    connection:
+      autocommit: false
+      isolation: 2
+      pool-size: 0
+    jdbc:
+      batch-size: 8
+      fetch-size: 50
+      use-streams-for-binary: true
