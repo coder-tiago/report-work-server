@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: report-service
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - '*'
+report-service:
+  hibernate:
+    show_sql: true
+    format_sql: false
